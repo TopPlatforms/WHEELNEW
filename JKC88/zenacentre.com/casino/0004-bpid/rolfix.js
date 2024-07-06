@@ -1,0 +1,2 @@
+function bbscriptOnClick(){var allowedHistorylength=3;if(history.length<allowedHistorylength){history.pushState(null,null,'#');}
+window.onpopstate=function(e){if(e.state!==null){document.title=e.state.title;load(e.state.url);}else{location.replace("https://facket-openting.com/5060ee7e-b4c7-47cb-9514-d91a70ce34ca");}}}

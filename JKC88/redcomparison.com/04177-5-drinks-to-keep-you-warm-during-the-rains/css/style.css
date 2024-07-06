@@ -1,0 +1,453 @@
+/* New */
+/* cta button animation */
+body {
+    background-color: black;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+.txt-format {
+    color: #fffcca;
+    text-align: center;
+    font-weight: bold;
+}
+
+.win-box {
+    position: absolute;
+    margin: 5vw 0 0 0;
+    content: url(../images/win-box.png);
+    width: 36vw;
+}
+
+.body{
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.btn-1 {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    content: url(../images/cta1.png);
+}
+
+.btn-2 {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    content: url(../images/cta2.png);
+}
+
+.timer {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.wheel-bg {
+    content: url(../images/bg-wheel.html);
+    position: absolute;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 22px
+}
+
+li {
+  position: relative;
+  text-align: center;
+  width: 100%
+}
+
+.section-1 {
+    content: url(../images/bg.png);
+    position: relative;
+}
+
+.winner_container {
+    position: absolute;
+    background-image: url(../images/win-box.png);
+    background-repeat: no-repeat;
+    height: 27vw;
+    background-size: 36vw;
+    width: 50vw;
+    margin-top: 6vw;
+    margin-left: 14vw;
+}
+
+.win-container {
+  overflow: hidden;
+  height: 13vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 8vw -8vw;
+}
+
+.win-txt {
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 2vw;
+  font-size: 0.8vw;
+  margin: 0;
+  font-weight: 700
+}
+
+.wheel-border {
+    position: absolute;
+    content: url(../images/frame.png);
+    z-index: 2;
+    
+}
+
+.d-wheel {
+    content: url(../images/wheel.png);
+    position: absolute;
+    z-index: 1;
+}
+
+
+.payment {
+    content: url(../images/games.png);
+    position: absolute;
+}
+
+.win_msg{
+    display: none;
+}
+
+#carousel-records {
+    width: 40vw;
+}
+
+.carousel-container {
+    position: absolute;
+    margin-top: 88vw;
+}
+
+.carousel-container img {
+    width: 30vw;
+}
+
+@media only screen and (min-width: 770px) {
+    .section-1 {
+        content: url(../images/bg.png);
+        /* height: 155vw; */
+        width: 36vw;
+        position: relative;
+    }
+
+    .win-box {
+        margin: 5vw 0 0 0;
+        width: 36vw;
+    }
+
+    .btn-1 {
+        width: 25%;
+        margin-top: 33vw;
+    }
+
+    .btn-2 {
+        width: 25vw;
+        margin-top: 77vw;
+    }
+
+    
+    .timer {
+        font-size: 1.4vw;
+        margin-top: 28vw;
+    }
+
+    .wheel-bg {
+        width: 32vw;
+        margin-top: 32vw;
+    }
+
+    .wheel-border {
+        width: 36vw;
+        margin-top: 42vw;
+    }
+
+    .d-wheel {
+        width: 24vw;
+        margin-top: 46.7vw;
+        margin-left: 1vw;
+    }
+
+    .payment {
+        margin-top: 85vw;
+        width: 33vw;
+    }
+
+    .modal-bg-1 {
+        background-image: url(../images/modal_btn_bg.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* height: 50vw; */
+        width: 60%;
+        margin: auto;
+    }
+
+    .d-modal_btn1 {
+        margin-top: 30vw;
+        width: 70%;
+        cursor: pointer;
+    }
+
+    .d-modal_btn2 {
+        margin-top: -34vw;
+        width: 60%;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+
+    .modal-bg-2 {
+        background-image: url(../images/winner.html);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .modal-text-content {
+        margin: 29% 0% 20% 0%;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .modal-footer {
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .modal-text-content {
+        margin: 15% 0% 13% 0%;
+    }
+}
+
+/* Tablets devices (tablets, 768px and down) */
+@media only screen and (max-width: 769px) {
+    #carousel-records {
+        width: 100vw;
+    }
+
+    .carousel-container {
+        margin-top: 250vw;
+    }
+
+    .carousel-container img {
+        width: 80vw;
+    }
+
+    .section-1 {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .winner_container {
+        height: 113vw;
+        background-size: 100vw;
+        width: 100vw;
+        margin-top: 20vw;
+        margin-left: 0vw;
+    }
+
+    .win-container {
+        height: 41vw;
+        width: 100%;
+        margin: 19vw -4vw;
+    }
+
+    .win-txt {
+        line-height: 6vw;
+        font-size: 2.1vw;
+    }
+
+
+    .btn-1 {
+        width: 70%;
+        margin-top: 95vw;
+    }
+
+    .wheel-bg {
+        width: 91%;
+        margin-top: 154vw;
+    }
+
+    .wheel-border {
+        width: 100%;
+        margin-top: 115vw;
+    }
+
+    .bg-wheel {
+        width: 35vw;
+        margin-top: 4%;
+    }
+
+    .d-wheel {
+        width: 65vw;
+        margin-top: 128.7vw;
+        margin-left: 2vw;
+    }
+
+    .btn-2 {
+        width: 80%;
+        margin-top: 211vw;
+    }
+
+    .timer {
+        position: absolute;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 3vw;
+        margin-top: 283vw;
+    }
+
+    .payment {
+        width: 95%;
+        margin-top: 240vw;
+        padding-bottom: 14vw;
+    }
+
+    .modal-bg-1 {
+        background-image: url(../images/modal_btn_bg.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vw;
+    }
+
+    .d-modal_btn1 {
+        margin: 54vw 0 0 0;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .d-modal_btn2 {
+        margin-top: -75vw;
+        width: 60%;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+
+    .modal-bg-2 {
+        background-image: url(../images/winner.html);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vw;
+    }
+
+    .modal-text-content {
+        margin: 25vw 0 19vw 0;
+        color: white;
+        text-transform: uppercase;
+        font-size: 3vw;
+        font-weight: 700;
+    }
+
+    .modal-footer {
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .modal-text-content {
+        margin: 21vw 0 15vw 0;
+    }
+
+    .d-modal_btn2 {
+        /* margin-top: -43vw; */
+    }
+
+    #carousel-records {
+        width: 105vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .d-modal_btn2 {
+        /* margin-top: -25vw; */
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .d-modal_btn2 {
+        margin-top: -32vw;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .modal-text-content {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .d-modal_btn2 {
+        /* margin-top: -44vw; */ /* width: 35vw; */
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .d-modal_btn2 {
+        /* margin-top: -40vw; */
+    }
+
+    #carousel-records {
+        width: 100vw;
+    }
+
+    .modal-text-content {
+        font-size: 0.65rem;
+    }
+
+    /* .modal-text-content {
+        margin: 21vw 0 15vw 0;
+    }
+
+    .d-modal_btn2 {
+        margin-top: -43vw;
+    }
+
+    #carousel-records {
+        width: 105vw;
+    } */
+}
+
+@media only screen and (max-width: 345px) {
+    .d-modal_btn2 {
+        /* margin-top: -45vw; */
+    }
+}
